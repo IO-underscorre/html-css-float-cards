@@ -2,12 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
 }
 
-a {
+main {
+    padding: 0 10%;
+}
+
+main > * {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+main > h1 {
+    font-size: 3.5rem;
+    color: #e53170;
+}
+
+main > p {
+    font-size: 1.5rem;
+}
+
+.cards-container {
+    flex-wrap: wrap;
+}
+
+.cards-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    background-color: #0f0e17;
+    box-shadow: 0px 0px 4px #000000;
+    width: calc((100% - 3vmin) / 3);
+    height: 8vmin;
+
+    margin: 0.75vmin 0;
+    float: left;
+}
+
+.card:nth-child( 3n + 2) {
+    margin-left: 1.5vmin;
+    margin-right: 1.5vmin;
+}
+
+.card::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card > img {
+    float: left;
+    height: 100%;
+}
+
+.card-text {    
+    text-align: left;
+    font-size: 1.5vmin;
+    color: #ffffff;
+    
+    float: left;
+}
+
+.card-text > * {
+    display: block;
+    padding: 0.4vmin 0 0 1vmin;
+}
+
+.card-text > h2 {
+    font-size: 2vmin;
+}
+
+.card-text > a {
+    color: #6ecbe3;
     text-decoration: none;
 }
 
-a:hover {
+.card-text > a:hover {
     text-decoration: underline;
 }
