@@ -18,13 +18,20 @@ body > * {
 header {
     height: 5rem;
     box-shadow: 0 0 0.6rem #888888;
+        
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 header > img {
     height: 4rem;
-    
-    position: -webkit-sticky;
-    position: sticky;
+
     float: left;
     margin: 0.5rem 0.5rem 0 0;
 }
