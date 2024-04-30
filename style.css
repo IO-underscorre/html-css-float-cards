@@ -11,11 +11,13 @@ a {
     color: #000000;
 }
 
+body > * {
+    padding: 0 10%;
+}
+
 header {
     height: 5rem;
     box-shadow: 0 0 0.6rem #888888;
-
-    padding: 0 10%;
 }
 
 header > img {
@@ -93,10 +95,6 @@ nav {
 .sign-up {
     color: #ffffff;
     background-color: #e53170;
-}
-
-main {
-    padding: 0 10%;
 }
 
 main > * {
