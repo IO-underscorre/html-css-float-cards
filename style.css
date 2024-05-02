@@ -16,7 +16,7 @@ body > * {
 }
 
 header {
-    height: 5rem;
+    min-height: 5rem;
     background-color: #ffffff;
     box-shadow: 0 0 0.6rem #888888;
         
@@ -122,6 +122,7 @@ main > p {
 
 .cards-container {
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .cards-container::after {
@@ -133,16 +134,11 @@ main > p {
 .card {
     background-color: #0f0e17;
     box-shadow: 0 0 4px #000000;
-    width: calc((100% - 3vmin) / 3);
-    height: 8vmin;
+    width: calc((100% - 3vw) / 3);
+    min-width: 20.5rem;
 
-    margin: 0.75vmin 0;
+    margin: 0.5vw 0.5vw;
     float: left;
-}
-
-.card:nth-child( 3n + 2) {
-    margin-left: 1.5vmin;
-    margin-right: 1.5vmin;
 }
 
 .card::after {
@@ -152,25 +148,26 @@ main > p {
 }
 
 .card > img {
+    height: 9rem;
     float: left;
-    height: 100%;
 }
 
-.card-text {    
-    text-align: left;
-    font-size: 1.5vmin;
-    color: #ffffff;
-    
+.card-text {
+    min-width: 20.5rem;
     float: left;
+
+    text-align: left;
+    font-size: 1.7rem;
+    color: #ffffff;
 }
 
 .card-text > * {
     display: block;
-    padding: 0.4vmin 0 0 1vmin;
+    padding: 0.5rem 0 0 0.5rem;
 }
 
 .card-text > h2 {
-    font-size: 2vmin;
+    font-size: 2.2rem;
 }
 
 .card-text > a {
